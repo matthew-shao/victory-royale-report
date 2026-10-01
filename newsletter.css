@@ -1,0 +1,53 @@
+
+@page { size: Letter; margin: 0; }
+:root { --ink:#141414; --red:#c8102e; --paper:#fbf8f1; --rule:#141414; --mute:#5b5b5b; --tint:#efe9dc; --green:#1d7a3e; }
+* { box-sizing:border-box; margin:0; padding:0; }
+html,body { background:var(--paper); }
+body { padding:0.2in 0.3in 0.08in; }
+body { font-family:'Inter',sans-serif; color:var(--ink); font-size:6.85pt; line-height:1.25; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+b { font-weight:700; }
+.mast { display:flex; align-items:flex-end; justify-content:space-between; border-bottom:3px solid var(--ink); padding-bottom:3px; }
+.mast h1 { font-family:'Inter Display'; font-weight:900; font-size:27pt; letter-spacing:-1px; white-space:nowrap; line-height:0.9; text-transform:uppercase; }
+.mast h1 span { color:var(--red); }
+.mast .meta { white-space:nowrap; text-align:right; font-size:7pt; line-height:1.35; }
+.mast .meta .iss { font-family:'Inter Display'; font-weight:800; font-size:9.5pt; color:var(--red); text-transform:uppercase; letter-spacing:.4px; }
+.sub { display:flex; justify-content:space-between; border-bottom:1px solid var(--ink); padding:2px 0 2px; font-family:'Lora',serif; font-style:italic; font-size:8pt; }
+.ticker { background:var(--ink); color:#fff; font-size:6.5pt; padding:3px 6px; margin:4px 0 5px; line-height:1.45; letter-spacing:.1px; }
+.ticker b { color:#ffcc33; font-family:'Inter Display'; font-weight:800; letter-spacing:.6px; margin-right:4px; }
+.ticker i { font-style:normal; color:#bbb; }
+.grid { display:grid; grid-template-columns: 1.18fr 1fr 1.02fr; gap:0 11px; }
+.col > section { margin-bottom:4px; }
+h2 { font-family:'Inter Display'; font-weight:900; text-transform:uppercase; font-size:10.5pt; letter-spacing:.2px; border-top:2.5px solid var(--ink); padding-top:2px; margin-bottom:3px; display:flex; justify-content:space-between; align-items:baseline; }
+h2 small { font-family:'Inter'; font-weight:600; font-size:6pt; color:var(--red); letter-spacing:.5px; }
+h3 { font-family:'Inter Display'; font-weight:800; font-size:7.6pt; text-transform:uppercase; color:var(--red); letter-spacing:.4px; margin:4px 0 2px; }
+.game { margin-bottom:2.5px; }
+.score { font-family:'Inter Display'; font-weight:800; font-size:7.5pt; display:flex; justify-content:space-between; border-bottom:1px dotted #999; margin-bottom:1px; }
+.score .w { }
+.score .l { color:var(--mute); font-weight:600; }
+.score .n { font-variant-numeric:tabular-nums; }
+.quick { list-style:none; }
+.quick li { padding:1.4px 0; border-bottom:1px dotted #bbb; }
+.quick li .s { font-family:'Inter Display'; font-weight:800; font-variant-numeric:tabular-nums; }
+.award { display:grid; grid-template-columns: 62px 1fr; gap:0 5px; padding:2.4px 0; border-bottom:1px dotted #bbb; }
+.award .t { font-family:'Inter Display'; font-weight:900; text-transform:uppercase; font-size:6.6pt; line-height:1.1; color:var(--red); }
+.trade { padding:3px 0 3px; border-bottom:1px dotted #bbb; }
+.trade .deal { font-family:'Inter Display'; font-weight:800; font-size:7.3pt; }
+.verdict { display:inline-block; background:var(--ink); color:#fff; font-weight:700; font-size:6pt; padding:0 3px; text-transform:uppercase; letter-spacing:.4px; margin-right:3px; }
+.verdict.win { background:var(--green); }
+.pr { width:100%; border-collapse:collapse; }
+.pr td { vertical-align:top; padding:1.6px 0; border-bottom:1px dotted #bbb; }
+.pr .rk { font-family:'Inter Display'; font-weight:900; font-size:12pt; width:19px; line-height:1; color:var(--red); }
+.pr .tm { font-family:'Inter Display'; font-weight:800; font-size:7.3pt; }
+.pr .rec { color:var(--mute); font-weight:600; font-size:6.4pt; }
+.pr .mv { font-size:6pt; font-weight:700; }
+.up { color:var(--green); } .dn { color:var(--red); }
+table.luck { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; font-size:6.7pt; }
+table.luck th { font-family:'Inter Display'; font-weight:800; font-size:5.9pt; text-transform:uppercase; text-align:right; border-bottom:1.5px solid var(--ink); padding:1px 2px; line-height:1.1; vertical-align:bottom; }
+table.luck th:first-child, table.luck td:first-child { text-align:left; }
+table.luck td { text-align:right; padding:1.4px 2px; border-bottom:1px dotted #bbb; }
+.pos { color:var(--green); font-weight:700; } .neg { color:var(--red); font-weight:700; }
+.note { font-size:5.8pt; color:var(--mute); line-height:1.25; margin-top:2px; }
+.box { background:var(--tint); padding:4px 6px; border-left:3px solid var(--red); }
+.box ul { list-style:none; } .box li { padding:1px 0; }
+.box li::before { content:"▸ "; color:var(--red); }
+.foot { margin-top:3px; border-top:1px solid var(--ink); padding-top:2px; font-size:5.8pt; color:var(--mute); display:flex; justify-content:space-between; }
