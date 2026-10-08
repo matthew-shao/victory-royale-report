@@ -52,6 +52,11 @@ table.luck td { text-align:right; padding:1.4px 2px; border-bottom:1px dotted #b
 .box ul { list-style:none; } .box li { padding:1px 0; }
 .box li::before { content:"▸ "; color:var(--red); }
 .foot { margin-top:3px; border-top:1px solid var(--ink); padding-top:2px; font-size:5.8pt; color:var(--mute); display:flex; justify-content:space-between; }
+.grade { display:inline-block; min-width:15px; text-align:center; background:var(--ink); color:#fff; font-family:'Inter Display'; font-weight:900; font-size:6.4pt; padding:0 2px; margin-right:3px; }
+.grade.g { background:var(--green); } .grade.r { background:var(--red); }
+.pick { color:var(--red); font-family:'Inter Display'; font-weight:800; text-transform:uppercase; font-size:6.2pt; letter-spacing:.3px; }
+.callout { background:var(--tint); border-left:3px solid var(--red); padding:3px 5px; margin-bottom:3px; }
+.callout .k { font-family:'Inter Display'; font-weight:900; text-transform:uppercase; color:var(--red); font-size:7pt; }
 
 body.site { margin:0; background:var(--deck); color:var(--ink); font-family:'Inter',system-ui,sans-serif; }
 :root { --deck:#dcd5c6; }
